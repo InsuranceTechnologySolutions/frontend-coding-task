@@ -1,4 +1,8 @@
 # frontend-coding-task
+
+## Tech stack
+This is a basic [React](https://reactjs.org/) 18 application set up with [SWR](https://swr.vercel.app/) for data fetching, [Formik](https://formik.org/docs/overview) for handling form state and [styled-components](https://styled-components.com/docs) for CSS-in-JS.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -16,12 +20,10 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-
 # Tasks
 You can include additional npm packages to solve the tasks, but please include a justification for each package you choose to include.
 
 ### Refactor the codebase
-Currently there is no folder structure and each file contains too much logic.
 Organize the code better with a focus on readability and reusability.
 
 ### Implement validation for the forms
@@ -38,7 +40,8 @@ In addition to validating the data types, the following rules should be implemen
 * No fields can be empty
 
 ### Add some unit tests
-Currently there is only a single unit test in this repository. Implement some additional unit test and focus on the validation logic.
+This repository is set up with Jest and React Testing Library, but there is only a single unit test in this repository.
+Implement some additional unit test and focus on the validation logic.
 
 
 ### Form state after submit and delete
@@ -48,7 +51,13 @@ Make it so that the list automatically updates after changes are made.
 
 ### Error handling
 Currently, if any API request fails, it will silently fail and the user will be unaware of any potential issues.
-If any network requests fail, we should throw an error. But we don't want to crash the application if an error is thrown, instead we should display a human readable error message to the user and log the real error message. (a `console.log()` will do for now.)
+If any network requests fail, we should throw an error.
+But we don't want to crash the application if an error is thrown, instead we should display a human readable error message to the user and log the real error message. (a `console.log()` will do for now.)
+
+### Link the two forms together
+When submitting a Claim, a `coverId` is expected.
+Let the user select a Cover when creating a new Claim and include that coverId in the request to the backend when submitting new Claims.
+In the list of Claims, there should be a new column with a link to a separate page which displays all information regarding that cover. The new page can have the following route: `/covers/:coverId`
 
 
 ## Full stack tasks
