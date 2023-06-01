@@ -1,3 +1,16 @@
+# Read this first!
+This repository is a template repository for our technical interview, so create your own project using this guide:
+
+[Github - Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+
+An alternative is to download the code and create a new repository using a different VCS provider (gitlab / Azure repos). **Do not fork this repository.**
+
+When you have completed the tasks, please share the repository link with us. We will review your submission before the interview.
+
+Good luck! 😊
+
+<br />
+
 # frontend-coding-task
 
 ## Tech stack
@@ -19,13 +32,6 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-# What to do?
-This repository is a template repository, so create your own project using this guide:
-
-[Github - Creating a repository from a template.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
-
-An alternative is to download the code and create a new repository using a different VCS provider (gitlab / Azure repos). Do not fork this repository.
 
 # Tasks
 You can include additional npm packages to solve the tasks, but please include a justification for each package you choose to include.
